@@ -19,7 +19,7 @@ const Navbar = () => {
                         alt="logo"
                     />
                     <p className='nav-logo'>
-                        Scout <span className='text-primary'>Shop</span>
+                        Scout<span className='text-primary'>Shop</span>
                     </p>
                 </Link>
 
