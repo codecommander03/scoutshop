@@ -48,12 +48,12 @@ export function extractDescription($: any) {
     for (const selector of selectors) {
         const elements = $(selector);
         if (elements.length > 0) {
-        const textContent = elements
-            .map((_: any, element: any) => $(element).text().trim())
-            .get()
-            .join("\n");
-        return textContent;
-        }
+            const textContent = elements
+                .map((_: any, element: any) => $(element).text().trim())
+                .get()
+                .join("\n");
+            return textContent;
+            }
     }
 
     // If no matching elements were found, return an empty string
@@ -65,7 +65,7 @@ export function getHighestPrice(priceList: PriceHistoryItem[]) {
 
     for (let i = 0; i < priceList.length; i++) {
         if (priceList[i].price > highestPrice.price) {
-        highestPrice = priceList[i];
+            highestPrice = priceList[i];
         }
     }
 
@@ -77,7 +77,7 @@ export function getLowestPrice(priceList: PriceHistoryItem[]) {
 
     for (let i = 0; i < priceList.length; i++) {
         if (priceList[i].price < lowestPrice.price) {
-        lowestPrice = priceList[i];
+            lowestPrice = priceList[i];
         }
     }
 
