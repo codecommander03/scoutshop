@@ -75,7 +75,7 @@ export async function scrapeAmazonProduct(url: string) {
 
             category: '',
             stars: 0,
-            reviewCount: 0,
+            reviewsCount: 0,
         };
 
         return data;
